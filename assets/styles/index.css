@@ -1,0 +1,227 @@
+:root {
+    --mob-width:360px;
+
+    --nav-bg:#FFC857;
+    --nav-bg-mob:#FFFFFF4D;
+    --nav-nav-bh:#323031;
+    --nav-br:#0000001A;
+    --food-bg:#FFFFFF33;
+    --food-h3:#FFFFFF;
+    --food-p:#FFFFFFB2;
+
+    --nav-font-size: 10px;
+    --nav-font-size-desk: 10px;
+
+    --font-color:#000000;
+    --font-colorh2:#DB3A34;
+    --font-s0:10px;
+    --font-s1:14px;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
+img {
+    display: block;
+}
+body {
+    font-family: vazirmatn;
+    background-color:var(--nav-nav-bh);
+    margin: 0;
+}
+#header {
+    width:var(--mob-width) ;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bg);
+    border: 1px solid var(--nav-br);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: sticky;
+    top: 0;
+}
+.container {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav {
+    position: sticky;
+    top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    background-color: var(--nav-bg);
+    border: 1px solid var(--nav-bg);
+}
+#nav nav ul {
+    list-style: none;
+    padding-right: 0;
+}
+#nav nav ul {
+    overflow-x: scroll;
+    display:flex ;
+    gap: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+#nav nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+#nav nav a figure {
+    width: 60px;
+    margin: 0;
+    text-align: center;
+    padding: 6px;
+    background-color: var(--nav-bg-mob);
+    border-radius: 6px;
+    font-size: var(--nav-font-size);
+}
+#nav nav a figure img {
+    margin-left: auto;
+    margin-right: auto;
+}
+#nav nav a figure figcaption {
+    margin-top: 6px;
+}
+#menu {
+    border: 1px solid red;
+    margin-bottom: 210px;
+    /* width: 800px; */
+    /* height: 200vh; */
+    /* background-color: green; */
+    padding: 20px 10px;
+}
+#menu .pizza h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--font-colorh2);
+}
+#menu ul {
+    border: 1px solid blue;
+    list-style: none;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+}
+#menu ul li{
+    width: 100%;
+    padding: 4px 5px;
+    border: 1px solid pink;
+    background-color: var(--food-bg);
+    border-radius: 16px;
+}
+#menu ul li figure {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+#menu ul li figure figcaption {
+    /* width: 100px; */
+    overflow: hidden;
+}
+#menu h3 {
+    margin-top:10px ;
+    margin-bottom: 4px;
+    font-size: var(--font-s1);
+    color: var(--food-h3);
+    font-weight: 700;
+}
+#menu p {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: var(--font-s0);
+    color: var(--food-p);
+    max-height: 1em;
+    min-height: 1.3em;
+    /* width: 100%; */
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#menu ul li figure figcaption div {
+    /* line-height: 1; */
+    
+    /* padding: 0; */
+    /* text-align: right; */
+    /* margin-bottom: 0; */
+    /* background-color: red; */
+    /* margin-left: 0; */
+    font-size: 21px;
+    color: var(--food-h3);
+    display: flex;
+    gap:2px ;
+    justify-content: end;
+    /* background-color: red; */
+}
+#menu ul li figure figcaption div span {
+    /* padding: 0; */
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+@media (width>=1000px) {
+    #menu {
+        width: 800px;
+    }
+    .container {
+        width: 1000px;
+        display: flex;
+        align-items: start;
+    }
+    #header {
+        padding: 20px 13px;
+        width: 100%;
+    }
+    #header img {
+        width: 95px;
+        height: 95px;
+    }
+    #nav {
+        width: 200px;
+        padding: 24px;
+        background-color: var(--nav-nav-bh);
+        border: none;
+        top: 262px;
+    }
+    #nav nav ul {
+        overflow: auto;
+        flex-direction: column;
+        gap: 12px;
+        
+    }
+    #nav nav a {    
+        border-radius: 6px;
+    }
+    #nav nav a figure {
+        padding: 12px;
+        background-color: var(--nav-bg);
+        display: flex;
+        gap: 12px;
+        width: 100%;
+        font-size: var(--nav-font-size-desk);
+        align-items: center;
+    }
+    #nav nav a figure img {
+        width: 24px;
+        height: 24px;
+    }
+    #nav nav a figure figcaption {
+        text-align: right;
+        flex-grow: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
