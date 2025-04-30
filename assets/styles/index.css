@@ -94,11 +94,7 @@ body {
     margin-top: 6px;
 }
 #menu {
-    border: 1px solid red;
     margin-bottom: 210px;
-    /* width: 800px; */
-    /* height: 200vh; */
-    /* background-color: green; */
     padding: 20px 10px;
 }
 #menu .pizza h2 {
@@ -108,7 +104,6 @@ body {
     color: var(--font-colorh2);
 }
 #menu ul {
-    border: 1px solid blue;
     list-style: none;
     padding-right: 0;
     display: flex;
@@ -118,7 +113,6 @@ body {
 #menu ul li{
     width: 100%;
     padding: 4px 5px;
-    border: 1px solid pink;
     background-color: var(--food-bg);
     border-radius: 16px;
 }
@@ -128,7 +122,6 @@ body {
     margin: 0;
 }
 #menu ul li figure figcaption {
-    /* width: 100px; */
     overflow: hidden;
 }
 #menu h3 {
@@ -145,32 +138,21 @@ body {
     color: var(--food-p);
     max-height: 1em;
     min-height: 1.3em;
-    /* width: 100%; */
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
 #menu ul li figure figcaption div {
-    /* line-height: 1; */
-    
-    /* padding: 0; */
-    /* text-align: right; */
-    /* margin-bottom: 0; */
-    /* background-color: red; */
-    /* margin-left: 0; */
     font-size: 21px;
     color: var(--food-h3);
     display: flex;
     gap:2px ;
     justify-content: end;
-    /* background-color: red; */
 }
 #menu ul li figure figcaption div span {
-    /* padding: 0; */
     font-size: 8px;
     display: flex;
     flex-direction: column;
-    /* background-color: blue; */
 }
 @media (width>=1000px) {
     #menu {
@@ -223,5 +205,20 @@ body {
         flex-grow: 1;
         margin-top: auto;
         margin-bottom: auto;
+    }
+    #menu .pizza h2 {
+        text-align: right;
+        font-size: 32px;
+        font-weight: 900;
+    }
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-top: 1px solid #DB3A34;
+        padding-top: 12px;
+    }
+    #menu ul li{
+        width: 49%;
     }
 }
